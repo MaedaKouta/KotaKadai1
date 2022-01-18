@@ -9,17 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var imputNumTextField1: UITextField!
-    @IBOutlet weak var imputNumTextField2: UITextField!
-    @IBOutlet weak var imputNumTextField3: UITextField!
-    @IBOutlet weak var imputNumTextField4: UITextField!
-    @IBOutlet weak var imputNumTextField5: UITextField!
-    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet private weak var imputNumTextField1: UITextField!
+    @IBOutlet private weak var imputNumTextField2: UITextField!
+    @IBOutlet private weak var imputNumTextField3: UITextField!
+    @IBOutlet private weak var imputNumTextField4: UITextField!
+    @IBOutlet private weak var imputNumTextField5: UITextField!
+    @IBOutlet private weak var resultLabel: UILabel!
     var imputNum1 = 0, imputNum2 = 0, imputNum3 = 0, imputNum4 = 0, imputNum5 = 0
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     @IBAction func calcButton(_ sender: Any) {
         imputNum1 = nilJudge(imputText: imputNumTextField1)
