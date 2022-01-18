@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B97CF2B127965A39004A6749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97CF2B027965A39004A6749 /* ViewController.swift */; };
 		B992802427965833007496B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B992802327965833007496B8 /* AppDelegate.swift */; };
 		B992802627965833007496B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B992802527965833007496B8 /* SceneDelegate.swift */; };
-		B992802827965833007496B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B992802727965833007496B8 /* ViewController.swift */; };
 		B992802B27965833007496B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B992802927965833007496B8 /* Main.storyboard */; };
 		B992802D27965833007496B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B992802C27965833007496B8 /* Assets.xcassets */; };
 		B992803027965833007496B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B992802E27965833007496B8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B97CF2B027965A39004A6749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B992802027965833007496B8 /* KotaKadai1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotaKadai1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B992802327965833007496B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B992802527965833007496B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B992802727965833007496B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B992802A27965833007496B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B992802C27965833007496B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B992802F27965833007496B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		B992802227965833007496B8 /* KotaKadai1 */ = {
 			isa = PBXGroup;
 			children = (
-				B992802327965833007496B8 /* AppDelegate.swift */,
-				B992802527965833007496B8 /* SceneDelegate.swift */,
-				B992802727965833007496B8 /* ViewController.swift */,
-				B992802927965833007496B8 /* Main.storyboard */,
+				B992803927965871007496B8 /* Model */,
+				B99280372796584D007496B8 /* View */,
+				B992803827965862007496B8 /* Controller */,
 				B992802C27965833007496B8 /* Assets.xcassets */,
 				B992802E27965833007496B8 /* LaunchScreen.storyboard */,
 				B992803127965833007496B8 /* Info.plist */,
 			);
 			path = KotaKadai1;
+			sourceTree = "<group>";
+		};
+		B99280372796584D007496B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B992802927965833007496B8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B992803827965862007496B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B992802327965833007496B8 /* AppDelegate.swift */,
+				B992802527965833007496B8 /* SceneDelegate.swift */,
+				B97CF2B027965A39004A6749 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B992803927965871007496B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B992802827965833007496B8 /* ViewController.swift in Sources */,
+				B97CF2B127965A39004A6749 /* ViewController.swift in Sources */,
 				B992802427965833007496B8 /* AppDelegate.swift in Sources */,
 				B992802627965833007496B8 /* SceneDelegate.swift in Sources */,
 			);
@@ -306,7 +330,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
