@@ -73,17 +73,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="imputNumTextField1" destination="z2n-3g-9kG" id="sSh-ak-Ltn"/>
-                        <outlet property="imputNumTextField2" destination="RyY-ul-u5L" id="8Xz-Rd-u6d"/>
-                        <outlet property="imputNumTextField3" destination="jE5-6b-Iaj" id="Oxh-3t-uof"/>
-                        <outlet property="imputNumTextField4" destination="Ozk-yV-Jtc" id="OUs-5i-uq6"/>
-                        <outlet property="imputNumTextField5" destination="qTB-Gl-aeW" id="ZiS-0o-FOR"/>
                         <outlet property="resultLabel" destination="76J-Hd-vUa" id="BFR-ta-Leo"/>
+                        <outletCollection property="imputTextField" destination="z2n-3g-9kG" collectionClass="NSMutableArray" id="3Zg-NC-IeW"/>
+                        <outletCollection property="imputTextField" destination="RyY-ul-u5L" collectionClass="NSMutableArray" id="Z8s-on-oZr"/>
+                        <outletCollection property="imputTextField" destination="jE5-6b-Iaj" collectionClass="NSMutableArray" id="zZT-gm-tv5"/>
+                        <outletCollection property="imputTextField" destination="Ozk-yV-Jtc" collectionClass="NSMutableArray" id="76E-Uo-k3S"/>
+                        <outletCollection property="imputTextField" destination="qTB-Gl-aeW" collectionClass="NSMutableArray" id="rJi-tr-KhZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-862" y="-687"/>
+            <point key="canvasLocation" x="-997" y="-718"/>
         </scene>
     </scenes>
     <resources>
